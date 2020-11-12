@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -13,21 +13,16 @@ import logo from "../logowhite.svg";
 import logob from "../logoblack.svg";
 import "./Tdsheader.css";
 
-class Tdsheader extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false,
-      activeMenu: "home",
-    };
-  }
+const Tdsheader = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState("home");
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-    document.addEventListener("mousedown", this.handleClickOutside);
-  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+  }, []);
 
-  handleScroll = () => {
+  const handleScroll = () => {
     const scrollY = window.scrollY; //Don't get confused by what's scrolling - It's not the window
     const navbar = document.querySelector("nav");
 
@@ -39,9 +34,7 @@ class Tdsheader extends React.Component {
         section.getBoundingClientRect().top > -150 &&
         section.getBoundingClientRect().top < 50
       ) {
-        this.setState({
-          activeMenu: section.getAttribute("id"),
-        });
+        setActiveMenu(section.getAttribute("id"));
       }
     });
 
@@ -56,20 +49,14 @@ class Tdsheader extends React.Component {
     }
   };
 
-  handleClickOutside = (event) => {
-    this.setState({
-      isOpen: false,
-    });
+  const handleClickOutside = (event) => {
+    setIsOpen(false);
   };
-  toggle = () => {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
+  const toggle = () => {
+    setIsOpen(!isOpen);
   };
-  scrollToTop = (element) => {
-    this.setState({
-      activeMenu: element,
-    });
+  const scrollToTop = (element) => {
+    setActiveMenu(element);
 
     var elementPosition = document.getElementById(element).offsetTop;
     window.scrollTo({
@@ -77,110 +64,99 @@ class Tdsheader extends React.Component {
       behavior: "smooth",
     });
   };
-  render() {
-    return (
-      <header>
-        <Navbar expand="md" fixed={"top"}>
-          <Container>
-            <NavbarBrand
-              onClick={() => this.scrollToTop("home")}
-              className={this.state.activeMenu === "home" ? "active" : ""}
-            >
-              <h3 className="logoblack">Tech Vision</h3>
-              <h3 style={{ color: "#fff" }} className="logowhite">
-                Tech Vision
-              </h3>
-              {/* <img src={logo} className="logowhite" alt="logo" />
+
+  return (
+    <header>
+      <Navbar expand="md" fixed={"top"}>
+        <Container>
+          <NavbarBrand
+            onClick={() => scrollToTop("home")}
+            className={activeMenu === "home" ? "active" : ""}
+          >
+            <h3 className="logoblack">Tech Vision</h3>
+            <h3 style={{ color: "#fff" }} className="logowhite">
+              Tech Vision
+            </h3>
+            {/* <img src={logo} className="logowhite" alt="logo" />
               <img src={logob} className="logoblack" alt="logo" /> */}
-            </NavbarBrand>
-            <NavbarToggler onClick={this.toggle}>
-              <span></span>
-            </NavbarToggler>
-            <Collapse isOpen={this.state.isOpen} navbar className="menu-ul">
-              <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <NavLink
-                    onClick={() => this.scrollToTop("home")}
-                    className={this.state.activeMenu === "home" ? "active" : ""}
-                  >
-                    Home
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    onClick={() => this.scrollToTop("about")}
-                    className={
-                      this.state.activeMenu === "about" ? "active" : ""
-                    }
-                  >
-                    About
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    onClick={() => this.scrollToTop("services")}
-                    className={
-                      this.state.activeMenu === "services" ? "active" : ""
-                    }
-                  >
-                    Services
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    onClick={() => this.scrollToTop("team")}
-                    className={this.state.activeMenu === "team" ? "active" : ""}
-                  >
-                    Team
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    onClick={() => this.scrollToTop("portfolio")}
-                    className={
-                      this.state.activeMenu === "portfolio" ? "active" : ""
-                    }
-                  >
-                    Portfolio
-                  </NavLink>
-                </NavItem>
+          </NavbarBrand>
+          <NavbarToggler onClick={toggle}>
+            <span></span>
+          </NavbarToggler>
+          <Collapse isOpen={isOpen} navbar className="menu-ul">
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink
+                  onClick={() => scrollToTop("home")}
+                  className={activeMenu === "home" ? "active" : ""}
+                >
+                  Home
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  onClick={() => scrollToTop("about")}
+                  className={activeMenu === "about" ? "active" : ""}
+                >
+                  About
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  onClick={() => scrollToTop("services")}
+                  className={activeMenu === "services" ? "active" : ""}
+                >
+                  Services
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  onClick={() => scrollToTop("team")}
+                  className={activeMenu === "team" ? "active" : ""}
+                >
+                  Team
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  onClick={() => scrollToTop("portfolio")}
+                  className={activeMenu === "portfolio" ? "active" : ""}
+                >
+                  Portfolio
+                </NavLink>
+              </NavItem>
 
-                <NavItem>
-                  <NavLink
-                    onClick={() => this.scrollToTop("price")}
-                    className={
-                      this.state.activeMenu === "price" ? "active" : ""
-                    }
-                  >
-                    Price
-                  </NavLink>
-                </NavItem>
+              <NavItem>
+                <NavLink
+                  onClick={() => scrollToTop("price")}
+                  className={activeMenu === "price" ? "active" : ""}
+                >
+                  Price
+                </NavLink>
+              </NavItem>
 
-                <NavItem>
-                  <NavLink
-                    onClick={() => this.scrollToTop("blog")}
-                    className={this.state.activeMenu === "blog" ? "active" : ""}
-                  >
-                    Blog
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    onClick={() => this.scrollToTop("contact")}
-                    className={
-                      this.state.activeMenu === "contact" ? "active" : ""
-                    }
-                  >
-                    Contact
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Container>
-        </Navbar>
-      </header>
-    );
-  }
-}
+              <NavItem>
+                <NavLink
+                  onClick={() => scrollToTop("blog")}
+                  className={activeMenu === "blog" ? "active" : ""}
+                >
+                  Blog
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  onClick={() => scrollToTop("contact")}
+                  className={activeMenu === "contact" ? "active" : ""}
+                >
+                  Contact
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
+};
 
 export default Tdsheader;
