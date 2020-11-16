@@ -44,12 +44,12 @@ class Tdsbanner extends React.Component {
                   <h1>
                     THE BEST <span>security company,</span> based in Melbourne
                   </h1>
-                  <p>
+                  {/* <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                     commodo viverra maecenas accumsan lacus vel facilisis.
-                  </p>
+                  </p> */}
                   <div className="d-flex justify-content-center">
                     {/* <Button color="primary mr-3">Get Started</Button> */}
                     <Tdsvideomodal></Tdsvideomodal>
@@ -65,12 +65,12 @@ class Tdsbanner extends React.Component {
                   <h1>
                     Feeling <span> Unsafe</span> at Home Contact Us
                   </h1>
-                  <p>
+                  {/* <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                     commodo viverra maecenas accumsan lacus vel facilisis.
-                  </p>
+                  </p> */}
                   <div className="d-flex justify-content-center">
                     {/* <Button color="primary mr-3">Get Started</Button> */}
                     <Tdsvideomodal></Tdsvideomodal>

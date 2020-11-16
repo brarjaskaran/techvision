@@ -64,14 +64,17 @@ class App extends React.Component {
           <Container>
             <div className="title-box">
               <h2>
-                Welcome to <b>Soxolo</b>
+                Welcome to <b>Tech Vision</b>
               </h2>
               <p>
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-              </p>
+                Get a Free Risk Assessment of your home by Our Security Expert.
+              </p>{" "}
+              <Media body>
+                <Media heading>Dial</Media>
+                <a href="tel:+61 415 174 120"> +61 415 174 120</a> <br />
+              </Media>{" "}
             </div>
-            <Row>
+            {/* <Row>
               <Col xs="12" sm="12" md="4">
                 <div className="white-bg wel-box coman-box">
                   <Icofont icon="icofont-drag2" />
@@ -102,7 +105,7 @@ class App extends React.Component {
                   </p>
                 </div>
               </Col>
-            </Row>
+            </Row> */}
           </Container>
         </div>
         {/* About us Section Start */}
@@ -131,70 +134,91 @@ class App extends React.Component {
               <h2>
                 Our <b>Services</b>
               </h2>
-              <p>There are many variations of passages of available.</p>
             </div>
             <Row>
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
-                  <Icofont icon="icofont-crown" />
-                  <h4>Branding</h4>
-                  <p>There are many variations of passages of available.</p>
+                  <Icofont
+                    icon="icofont-alarm"
+                    style={{ color: "var(--orange)" }}
+                  />
+                  <h4>Home Alarm System installation</h4>
+                  <p>Time needed to complete task: 3 hours 30 minutes</p>
                 </div>
               </Col>
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
-                  <Icofont icon="icofont-pen-alt-3" />
-                  <h4>UX/UI Design</h4>
-                  <p>There are many variations of passages of available.</p>
+                  <Icofont
+                    icon="icofont-ui-alarm"
+                    style={{ color: "var(--orange)" }}
+                  />
+                  <h4>Intercom doorbell installation</h4>
+                  <p>
+                    We have a variety of intercom system for installation. Range
+                    from Hikvision, Dahua etc.
+                  </p>
                 </div>
               </Col>
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
-                  <Icofont icon="icofont-camera-alt" />
-                  <h4>Photography</h4>
-                  <p>There are many variations of passages of available.</p>
+                  <Icofont
+                    icon="icofont-crown"
+                    style={{ color: "var(--orange)" }}
+                  />
+                  <h4>Home theatre installation</h4>
+                  <p>
+                    Home theatre installations and packages are also available
+                    with us. We install costmised home theatre, installation of
+                    projectors, screen with Dolby atmos, in wall speaker of
+                    brands like Klipch, Bose, JBL etc.
+                  </p>
                 </div>
               </Col>
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
-                  <Icofont icon="icofont-chart-growth" />
-                  <h4>Marketing</h4>
-                  <p>There are many variations of passages of available.</p>
+                  <Icofont
+                    icon="icofont-satellite"
+                    style={{ color: "var(--orange)" }}
+                  />
+                  <h4>TV Antenna installation FTA</h4>
+                  <p>
+                    We do antenna installations and service the existing
+                    antennas and we can also provide additional antenna tv
+                    points.
+                  </p>
                 </div>
               </Col>
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
-                  <Icofont icon="icofont-laptop-alt" />
-                  <h4>Web Design</h4>
-                  <p>There are many variations of passages of available.</p>
+                  <Icofont
+                    icon="icofont-computer"
+                    style={{ color: "var(--orange)" }}
+                  />
+                  <h4>TV wall mount</h4>
+                  <p>
+                    We do a variety of TV wall mounts, Fixed, extended,full
+                    motion etc
+                  </p>
                 </div>
               </Col>
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
-                  <Icofont icon="icofont-tick-boxed" />
-                  <h4>Development</h4>
-                  <p>There are many variations of passages of available.</p>
-                </div>
-              </Col>
-              <Col xs="15" sm="6" md="6" lg="3">
-                <div className="white-bg coman-box ourservice-box">
-                  <Icofont icon="paper" />
-                  <h4>Content Writer</h4>
-                  <p>There are many variations of passages of available.</p>
-                </div>
-              </Col>
-              <Col xs="12" sm="6" md="6" lg="3">
-                <div className="white-bg coman-box ourservice-box">
-                  <Icofont icon="search-job" />
-                  <h4>SEO & SMM</h4>
-                  <p>There are many variations of passages of available.</p>
+                  <Icofont
+                    icon="icofont-camera-alt"
+                    style={{ color: "var(--orange)" }}
+                  />
+                  <h4>CCTV camera installation</h4>
+                  <p>
+                    We have a variety of CCTV, camera packages. For both
+                    comercial and residential sites.
+                  </p>
                 </div>
               </Col>
             </Row>
           </Container>
         </div>
         {/* Team Section Start */}
-        <div className="section expert-team grapping" id="team">
+        {/* <div className="section expert-team grapping" id="team">
           <Container>
             <div className="title-box">
               <h2>
@@ -344,13 +368,13 @@ class App extends React.Component {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
         {/* Portfolio Section Start*/}
         <div className="section ourportfolio grapping" id="portfolio">
           <Container>
             <div className="title-box">
               <h2>
-                Our <b>Portfolio</b>
+                Recent <b>Jobs</b>
               </h2>
               <p>
                 When an unknown printer took a galley of type and scrambled it
@@ -361,7 +385,7 @@ class App extends React.Component {
           </Container>
         </div>
         {/* Marketing Section Start*/}
-        <div className="marketing-section grapping">
+        {/* <div className="marketing-section grapping">
           <Container>
             <Row className="align-items-center">
               <Col xs="12" sm="12" md="12" lg="6">
@@ -407,18 +431,14 @@ class App extends React.Component {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
         {/* Expert Feadback Section Start */}
         <div className="expertfeesback grapping">
           <Container>
             <div className="title-box">
               <h2>
-                Expert <b>Feadback</b>
+                <b>Feadback</b>
               </h2>
-              <p>
-                Extremely painful. Nor again is there anyone who loves or
-                pursues or desires to obtain pain of itself, because it is pain
-              </p>
             </div>
             <Tdsfeedbackslider></Tdsfeedbackslider>
           </Container>
@@ -430,16 +450,12 @@ class App extends React.Component {
               <h2>
                 Our Latest <b>Pricing</b>
               </h2>
-              <p>
-                Dignissimos ducimus qui blanditiis praesentium voluptatum
-                deleniti atque corrupti quos dolores
-              </p>
             </div>
             <Tdspricingtable></Tdspricingtable>
           </Container>
         </div>
         {/*Our Latest News  Section Start*/}
-        <div className="section latestnews grapping" id="blog">
+        {/* <div className="section latestnews grapping" id="blog">
           <Container>
             <div className="title-box">
               <h2>
@@ -507,9 +523,9 @@ class App extends React.Component {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
         {/* Work With Us  Section Start*/}
-        <div className="workwithus grapping">
+        {/* <div className="workwithus grapping">
           <Container>
             <div className="title-box mb-0">
               <h2 className="text-white">
@@ -519,7 +535,7 @@ class App extends React.Component {
               <Button>Get Started</Button>
             </div>
           </Container>
-        </div>
+        </div> */}
         {/* Contact Us Section Start  */}
         <div className="section contactus grapping" id="contact">
           <Container>
@@ -527,13 +543,9 @@ class App extends React.Component {
               <h2>
                 Contact <b>Us</b>
               </h2>
-              <p>
-                Dignissimos ducimus qui blanditiis praesentium voluptatum
-                deleniti atque corrupti quos dolores
-              </p>
             </div>
             <Row>
-              <Col xs="12" md="12" lg="4">
+              {/* <Col xs="12" md="12" lg="4">
                 <Media className="address-box">
                   <Media left href="#">
                     <Icofont icon="icofont-location-pin" />
@@ -543,16 +555,19 @@ class App extends React.Component {
                     <p> Exercisplan 4, 111 49 Stockholm, Sweden</p>
                   </Media>
                 </Media>
-              </Col>
-              <Col xs="12" md="6" lg="4">
+              </Col> */}
+              <Col xs="12" md="6" lg="5">
                 <Media className="address-box">
                   <Media left href="#">
                     <Icofont icon="icofont-mail" />
                   </Media>
                   <Media body>
                     <Media heading>Email</Media>
-                    <a href="mailto:info@Soxolo.com"> Info@soxolo.com</a> <br />
-                    <a href="mailto:support@Soxolo.com">support@soxolo.com</a>
+                    <a href="mailto:techvisions49@gmail.com">
+                      {" "}
+                      techvisions49@gmail.com
+                    </a>{" "}
+                    <br />
                   </Media>
                 </Media>
               </Col>
@@ -563,8 +578,7 @@ class App extends React.Component {
                   </Media>
                   <Media body>
                     <Media heading>Phone</Media>
-                    <a href="tel:+44 8888 888"> +44 8888 888</a> <br />
-                    <a href="tel:+44 5555 458">+44 5555 458</a>
+                    <a href="tel:+61 415 174 120"> +61 415 174 120</a> <br />
                   </Media>
                 </Media>
               </Col>
@@ -573,33 +587,24 @@ class App extends React.Component {
               <Col xs="12" md="12" lg="4">
                 <h4>Get in Touch</h4>
                 <hr />
-                <p>
-                  But I must explain to you how all this mistaken idea of
-                  denouncing pleasure and praising pain was born and I will give
-                  you a complete. account of the system, and expound the actual
-                  teachings of the great explorer praising I will give you a
-                  complete{" "}
-                </p>
+                <p>We would love to see on our social media</p>
                 <ListGroup className="social-icon">
-                  <ListGroupItem tag="a" href="#">
+                  <ListGroupItem
+                    tag="a"
+                    target="_blank"
+                    href="https://www.facebook.com/techvisions49"
+                  >
                     {" "}
                     <Icofont icon="icofont-facebook" />
                   </ListGroupItem>
-                  <ListGroupItem tag="a" href="#">
-                    {" "}
-                    <Icofont icon="icofont-twitter" />
-                  </ListGroupItem>
-                  <ListGroupItem tag="a" href="#">
+
+                  <ListGroupItem
+                    tag="a"
+                    href="https://www.instagram.com/techvisions49/"
+                    target="_blank"
+                  >
                     {" "}
                     <Icofont icon="icofont-instagram" />
-                  </ListGroupItem>
-                  <ListGroupItem tag="a" href="#">
-                    {" "}
-                    <Icofont icon="icofont-linkedin" />
-                  </ListGroupItem>
-                  <ListGroupItem tag="a" href="#">
-                    {" "}
-                    <Icofont icon="icofont-youtube-play" />
                   </ListGroupItem>
                 </ListGroup>
               </Col>
@@ -630,9 +635,17 @@ class App extends React.Component {
                   </Row>
                   <FormGroup>
                     <Input
-                      type="textarea"
+                      type="address"
                       name="address"
                       id="exampleAddress"
+                      placeholder="Address"
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <Input
+                      type="textarea"
+                      name="message"
+                      id="message"
                       placeholder="Your message"
                     />
                   </FormGroup>

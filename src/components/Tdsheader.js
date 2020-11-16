@@ -109,14 +109,14 @@ const Tdsheader = () => {
                   Services
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   onClick={() => scrollToTop("team")}
                   className={activeMenu === "team" ? "active" : ""}
                 >
                   Team
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink
                   onClick={() => scrollToTop("portfolio")}
@@ -135,14 +135,14 @@ const Tdsheader = () => {
                 </NavLink>
               </NavItem>
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   onClick={() => scrollToTop("blog")}
                   className={activeMenu === "blog" ? "active" : ""}
                 >
                   Blog
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink
                   onClick={() => scrollToTop("contact")}
