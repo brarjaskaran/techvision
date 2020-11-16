@@ -22,7 +22,7 @@ class Tdsfooter extends React.Component {
                 Website by:{" "}
                 <a to="https://www.linkedin.com/in/jaskaran-brar-605992b9/">
                   {" "}
-                  Jaskaran Brar
+                  Jas Brar
                 </a>
               </p>
             </Col>
