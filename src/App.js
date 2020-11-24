@@ -610,7 +610,7 @@ class App extends React.Component {
               </Col>
 
               <Col xs="12" md="12" lg="8">
-                <Form className="mt-4">
+                <Form className="mt-4" action="POST" data-netlify="true">
                   <Row>
                     <Col md={6}>
                       <FormGroup>
@@ -648,6 +648,9 @@ class App extends React.Component {
                       id="message"
                       placeholder="Your message"
                     />
+                  </FormGroup>
+                  <FormGroup>
+                    <div data-netlify-recaptcha="true"></div>
                   </FormGroup>
 
                   <Button color="primary">Send Message</Button>
