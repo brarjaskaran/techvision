@@ -30,7 +30,7 @@ class Tdsbanner extends React.Component {
           loop={true}
           margin={0}
           autoplay={true}
-          autoplayTimeout={3000}
+          autoplayTimeout={4000}
           smartSpeed={500}
           nav={true}
           items="1"
@@ -42,7 +42,7 @@ class Tdsbanner extends React.Component {
               <Container>
                 <div className="banner-text text-center">
                   <h1>
-                    THE BEST <span>security company,</span> based in Melbourne
+                    <span>Civil. Building. Technology.</span> company based in Adelaide
                   </h1>
                   {/* <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -52,7 +52,7 @@ class Tdsbanner extends React.Component {
                   </p> */}
                   <div className="d-flex justify-content-center">
                     {/* <Button color="primary mr-3">Get Started</Button> */}
-                    <Tdsvideomodal></Tdsvideomodal>
+                    {/* <Tdsvideomodal></Tdsvideomodal> */}
                   </div>
                 </div>
               </Container>
@@ -73,7 +73,7 @@ class Tdsbanner extends React.Component {
                   </p> */}
                   <div className="d-flex justify-content-center">
                     {/* <Button color="primary mr-3">Get Started</Button> */}
-                    <Tdsvideomodal></Tdsvideomodal>
+                    {/* <Tdsvideomodal></Tdsvideomodal> */}
                   </div>
                 </div>
               </Container>

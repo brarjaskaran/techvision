@@ -13,6 +13,8 @@ import logo from "../logowhite.svg";
 import logob from "../logoblack.svg";
 import "./Tdsheader.css";
 
+import avdhut from '../images/avdhut.png'
+
 const Tdsheader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("home");
@@ -73,9 +75,9 @@ const Tdsheader = () => {
             onClick={() => scrollToTop("home")}
             className={activeMenu === "home" ? "active" : ""}
           >
-            <h3 className="logoblack">Tech Vision</h3>
+            <h3 className="logoblack">AVDHUT</h3>
             <h3 style={{ color: "#fff" }} className="logowhite">
-              Tech Vision
+              <img src={avdhut}/>
             </h3>
             {/* <img src={logo} className="logowhite" alt="logo" />
               <img src={logob} className="logoblack" alt="logo" /> */}
@@ -126,14 +128,14 @@ const Tdsheader = () => {
                 </NavLink>
               </NavItem>
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   onClick={() => scrollToTop("price")}
                   className={activeMenu === "price" ? "active" : ""}
                 >
                   Price
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
 
               {/* <NavItem>
                 <NavLink

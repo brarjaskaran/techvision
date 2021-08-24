@@ -15,15 +15,16 @@ class Tdsfooter extends React.Component {
         <Container>
           <Row className="align-items-center">
             <Col md="6">
-              <p>Copyright @ 2020 Tech Vision. All rights reserved</p>
+              <p>Copyright @ 2021 Tech Vision. All rights reserved</p>
             </Col>
             <Col md="6">
               <p>
                 Website by:{" "}
-                <a to="https://www.linkedin.com/in/jaskaran-brar-605992b9/">
+                <a href="https://www.linkedin.com/in/jaskaran-brar-605992b9/">
                   {" "}
                   Jas Brar
                 </a>
+
               </p>
             </Col>
             {/* <Col>

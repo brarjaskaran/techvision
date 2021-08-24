@@ -72,26 +72,16 @@ class Tdsaboutslider extends React.Component {
         <div className="item">
           <div className="title-box text-left mb-0">
             <h2 className="mb-0">
-              Know About Our <b>Mission</b>
+              Our Short Story & <b>Mission</b>
             </h2>
             <h4 className="mt-0 mb-2 sub-title">
-              We Are <span>Security</span> Company Based in
-              <span> Melbourne</span>
+              We Are <span>Civil Building and technology</span> Company Based in
+              <span> Adelaide</span>
             </h4>
           </div>
-          <h4>
-            We provide CCTV camera installation services, Alarm system
-            installation, TV antenna installation, TV wall mount, data point
-            installation and other related services.
-          </h4>
+         
           <h5>
-            Techvision Security, provides the design, installation and
-            maintenance of CCTV systems for residential and commercial premises
-            in Melbourne and other surrounding suburbs. With our customized CCTV
-            monitoring systems, we give you the power of knowing exactly what
-            has been happing in your home and business 24 hours a day. If any
-            incident occurs in your property, you can check the record and take
-            all the necessary actions to make sure that it never happens again
+            Avdhut is an end to end solution provider catering to wide variety of clients within construction and ICT sectors. The team at Civitech Australia solves our client’s toughest challenges by providing exceptional services in construction, consulting, digital technology and business operations. 
           </h5>
         </div>
 
@@ -101,8 +91,8 @@ class Tdsaboutslider extends React.Component {
               Why Choose <b>Us</b>
             </h2>
             <h4 className="mt-0 mb-2 sub-title">
-              We Are <span>Security</span> Company Based in
-              <span> Melbourne</span>
+              We Are <span>Civil Building and technology</span> Company Based in
+              <span> Adelaide</span>
             </h4>
           </div>
           <div className="why-choose">

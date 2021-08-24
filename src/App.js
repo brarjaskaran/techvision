@@ -32,6 +32,8 @@ import Tdspricingtable from "./components/Tdspricingtable";
 import Tdsfooter from "./components/Tdsfooter";
 import "./App.css";
 import "./responsive.css";
+import SubmitForm from "./components/SubmitForm";
+
 class App extends React.Component {
   render() {
     return (
@@ -59,19 +61,20 @@ class App extends React.Component {
             </Row>
           </Container>
         </div> */}
+
         {/* Welcome Section Start */}
         <div className=" welcome-box grapping">
           <Container>
             <div className="title-box">
               <h2>
-                Welcome to <b>Tech Vision</b>
+                Welcome to <b>Avdhut Pty Ltd</b>
               </h2>
               <p>
-                Get a Free Risk Assessment of your home by Our Security Expert.
+                End-to-end solution provider in Construction & ICT sectors.
               </p>{" "}
               <Media body>
                 <Media heading>Dial</Media>
-                <a href="tel:+61 415 174 120"> +61 415 174 120</a> <br />
+                <a href="tel:+61 468 441 977"> +61 468 441 977</a> <br />
               </Media>{" "}
             </div>
             {/* <Row>
@@ -139,81 +142,53 @@ class App extends React.Component {
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
                   <Icofont
-                    icon="icofont-alarm"
-                    style={{ color: "var(--orange)" }}
-                  />
-                  <h4>Home Alarm System installation</h4>
-                  <p>Time needed to complete task: 3 hours 30 minutes</p>
-                </div>
-              </Col>
-              <Col xs="12" sm="6" md="6" lg="3">
-                <div className="white-bg coman-box ourservice-box">
-                  <Icofont
-                    icon="icofont-ui-alarm"
-                    style={{ color: "var(--orange)" }}
-                  />
-                  <h4>Intercom doorbell installation</h4>
-                  <p>
-                    We have a variety of intercom system for installation. Range
-                    from Hikvision, Dahua etc.
-                  </p>
-                </div>
-              </Col>
-              <Col xs="12" sm="6" md="6" lg="3">
-                <div className="white-bg coman-box ourservice-box">
-                  <Icofont
-                    icon="icofont-crown"
-                    style={{ color: "var(--orange)" }}
-                  />
-                  <h4>Home theatre installation</h4>
-                  <p>
-                    Home theatre installations and packages are also available
-                    with us. We install costmised home theatre, installation of
-                    projectors, screen with Dolby atmos, in wall speaker of
-                    brands like Klipch, Bose, JBL etc.
-                  </p>
-                </div>
-              </Col>
-              <Col xs="12" sm="6" md="6" lg="3">
-                <div className="white-bg coman-box ourservice-box">
-                  <Icofont
                     icon="icofont-satellite"
                     style={{ color: "var(--orange)" }}
                   />
-                  <h4>TV Antenna installation FTA</h4>
-                  <p>
-                    We do antenna installations and service the existing
-                    antennas and we can also provide additional antenna tv
-                    points.
-                  </p>
+                  <h4>Network Design</h4>
+                  <p>Network Planning & Design
+Network Construction
+Network Integration & Roll-out
+Performance & Optimization
+Operations & Maintenance</p>
                 </div>
               </Col>
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
                   <Icofont
-                    icon="icofont-computer"
+                    icon="icofont-cement-mix"
                     style={{ color: "var(--orange)" }}
                   />
-                  <h4>TV wall mount</h4>
+                 
+                  <h4>Civil Construction</h4>
                   <p>
-                    We do a variety of TV wall mounts, Fixed, extended,full
-                    motion etc
+                    Telecommunication Infrastructure
+Asbestos Removal
+Wireless & Rooftop Towers
+Pit & Pipe (Trenching & Drilling)
+Manholes
                   </p>
                 </div>
               </Col>
               <Col xs="12" sm="6" md="6" lg="3">
                 <div className="white-bg coman-box ourservice-box">
+                
                   <Icofont
-                    icon="icofont-camera-alt"
+                    icon="icofont-at"
                     style={{ color: "var(--orange)" }}
                   />
-                  <h4>CCTV camera installation</h4>
+                 
+                  <h4>ICT Services</h4>
                   <p>
-                    We have a variety of CCTV, camera packages. For both
-                    comercial and residential sites.
+                    Enterprise Software Solutions
+On-shore & Off-shore ICT Solutions
+Enterprise Cloud Computing Solutions
+Enterprise IT Security Solutions
+Blockchain Enablement Solutions
                   </p>
                 </div>
               </Col>
+             
             </Row>
           </Container>
         </div>
@@ -444,7 +419,7 @@ class App extends React.Component {
           </Container>
         </div>
         {/* Our  Pricing Section Start*/}
-        <div className="section ourlatest-pricing grapping" id="price">
+        {/* <div className="section ourlatest-pricing grapping" id="price">
           <Container>
             <div className="title-box">
               <h2>
@@ -453,7 +428,7 @@ class App extends React.Component {
             </div>
             <Tdspricingtable></Tdspricingtable>
           </Container>
-        </div>
+        </div> */}
         {/*Our Latest News  Section Start*/}
         {/* <div className="section latestnews grapping" id="blog">
           <Container>
@@ -563,9 +538,9 @@ class App extends React.Component {
                   </Media>
                   <Media body>
                     <Media heading>Email</Media>
-                    <a href="mailto:techvisions49@gmail.com">
+                    <a href="mailto:patelmeet4792@gmail.com">
                       {" "}
-                      techvisions49@gmail.com
+                      patelmeet4792@gmail.com
                     </a>{" "}
                     <br />
                   </Media>
@@ -578,7 +553,7 @@ class App extends React.Component {
                   </Media>
                   <Media body>
                     <Media heading>Phone</Media>
-                    <a href="tel:+61 415 174 120"> +61 415 174 120</a> <br />
+                    <a href="tel:+61 468 441 977"> +61 468 441 977</a> <br />
                   </Media>
                 </Media>
               </Col>
@@ -592,7 +567,7 @@ class App extends React.Component {
                   <ListGroupItem
                     tag="a"
                     target="_blank"
-                    href="https://www.facebook.com/techvisions49"
+                    href="https://www.facebook.com/"
                   >
                     {" "}
                     <Icofont icon="icofont-facebook" />
@@ -600,7 +575,7 @@ class App extends React.Component {
 
                   <ListGroupItem
                     tag="a"
-                    href="https://www.instagram.com/techvisions49/"
+                    href="https://www.instagram.com/"
                     target="_blank"
                   >
                     {" "}
@@ -610,51 +585,7 @@ class App extends React.Component {
               </Col>
 
               <Col xs="12" md="12" lg="8">
-                <Form className="mt-4" action="POST" data-netlify="true">
-                  <Row>
-                    <Col md={6}>
-                      <FormGroup>
-                        <Input
-                          type="text"
-                          name="name"
-                          id="examplename"
-                          placeholder="Name"
-                        />
-                      </FormGroup>
-                    </Col>
-                    <Col md={6}>
-                      <FormGroup>
-                        <Input
-                          type="email"
-                          name="email"
-                          id="exampleEmail"
-                          placeholder="Email"
-                        />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <FormGroup>
-                    <Input
-                      type="address"
-                      name="address"
-                      id="exampleAddress"
-                      placeholder="Address"
-                    />
-                  </FormGroup>
-                  <FormGroup>
-                    <Input
-                      type="textarea"
-                      name="message"
-                      id="message"
-                      placeholder="Your message"
-                    />
-                  </FormGroup>
-                  <FormGroup>
-                    <div data-netlify-recaptcha="true"></div>
-                  </FormGroup>
-
-                  <Button color="primary">Send Message</Button>
-                </Form>
+                <SubmitForm />
               </Col>
             </Row>
           </Container>
